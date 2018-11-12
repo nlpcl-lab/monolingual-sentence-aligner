@@ -27,3 +27,7 @@ a wrapper for NPM sbd package with custom settings and fixing some output
 
 - process.js:  
 The main entry, contains general flow of processing.
+
+## Contributor
+
+[Fitsum](http://nlp.kaist.ac.kr/~fgaim)
