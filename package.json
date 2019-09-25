@@ -1,18 +1,30 @@
 {
   "name": "monolingual-sentence-aligner",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.0.3",
   "description": "Sentence alignment for monolingual text",
-  "main": "process.js",
+  "main": "main.js",
   "dependencies": {
     "entities": "^1.1.1",
     "fast-levenshtein": "^2.0.6",
-    "sbd": "^1.0.12"
+    "sbd": "^1.0.12",
+    "webpack": "^4.41.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack-cli": "^3.3.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nlpcl-lab/monolingual-sentence-aligner.git"
+  },
+  "keywords": [
+    "sentence",
+    "aligner"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "author": "Fitsum and Jimin, NLPCL",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/nlpcl-lab/monolingual-sentence-aligner"
 }
