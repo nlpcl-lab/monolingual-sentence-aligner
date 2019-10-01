@@ -1,6 +1,5 @@
 # Monolingual Sentence Aligner
 
-
 ## Setup
 
 This code uses Node.js (https://nodejs.org).
@@ -15,19 +14,17 @@ Again, this can be changed by modifying the second line of `process.js`.
 ## Files and Classes
 
 - algorithm.js
+
   - class Alignment: represents a sentence alignment, in the form of bigraph.
 
 - data.js
+
   - class Sentences: represents a list of sentences. Its constructor receives a string and splits them into sentences.
   - class Diff: represents a diff file. Its constructor processes a diff string and splits them into tokens, including sentence boundaries.
   - class EditPair: represents an edit pair (an element in raw data array).
 
 - sentence_boundary.js:  
-a wrapper for NPM sbd package with custom settings and fixing some output
+  a wrapper for NPM sbd package with custom settings and fixing some output
 
 - process.js:  
-The main entry, containing the general flow of processing.
-
-## Contributor
-
-[Fitsum](http://nlp.kaist.ac.kr/~fgaim)
+  The main entry, containing the general flow of processing.
