@@ -1,0 +1,10 @@
+[
+  {
+    "id": "01",
+    "diff": "Hello, world! <del>My</del><ins>I will introduce that my</ins> name is Foo."
+  },
+  {
+    "id": "02",
+    "diff": "The Stanton house <del>as it exists now in the present day </del>still shows evidence of <del>the attempt of </del>Cady Stanton<ins>'s attempt</ins> to simplify her household duties.<ins>The novel </ins>Tom Jones <del>is a novel that </del>comically portrays English society in the middle Eighteenth Century."
+  }
+]
