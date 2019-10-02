@@ -137,6 +137,8 @@ aligned.res.forEach(entry => {
 
   For example:
 
-  > Origin: Hello! My name is Foo.
-  > Revision: Hello! I'm Foo.
-  > Diff: Hello! <del>My name is</del><ins>I'm</ins> Foo.
+  ```
+  Origin: Hello! My name is Foo.
+  Revision: Hello! I'm Foo.
+  Diff: Hello! <del>My name is</del><ins>I'm</ins> Foo.
+  ```
