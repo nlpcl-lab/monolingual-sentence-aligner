@@ -120,19 +120,19 @@ aligned.res.forEach(entry => {
   - `Alignment.getClusterString()`
     Returns result of the alignment in a readable text form. We recommend writing the result in a txt file.
   - `Alignment.getJSONFormat()`
-    Returns json format of the alignment result.
+    Returns json format of the alignment result.  
     Format:
     ```javascript
     [{ x: { ids: [], body: '' }, y: { ids: [], body: '' } }];
     ```
-- `aligner(inputFileName)`
+- `aligner(inputFileName)`  
   Returns two type of result: `stats`, `res`.
-  `stats` contains number of one2one, one2many, many2one, many2many, deletions, and additions.
+  `stats` contains number of one2one, one2many, many2one, many2many, deletions, and additions.  
   `res` contains the result of `Alignment.getJSONFormat()`.
 
-- input
+- input  
   The input file should contain at least two attributes: `id`, and `diff`.
-  `id` should be unique, and the `diff` contains information of original & revision sentences.
+  `id` should be unique, and the `diff` contains information of original & revision sentences.  
   The XML-like tag `<ins>` means revision text is made from insertion to the original text, `<del>` means deletion from original text makes revision text.
 
   For example:
