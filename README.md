@@ -1,5 +1,12 @@
 # Monolingual Sentence Aligner
 
+## Index
+
+- [Setup](#Setup)
+- [Files and Classes](#Files-and-Classes)
+- [Example](#Example)
+- [Documentation](#Documentation)
+
 ## Setup
 
 ```bash
@@ -106,3 +113,30 @@ aligned.res.forEach(entry => {
   }
 }
 ```
+
+## Documents
+
+- `Alignment`
+  - `Alignment.getClusterString()`
+    Returns result of the alignment in a readable text form. We recommend writing the result in a txt file.
+  - `Alignment.getJSONFormat()`
+    Returns json format of the alignment result.
+    Format:
+    ```javascript
+    [{ x: { ids: [], body: '' }, y: { ids: [], body: '' } }];
+    ```
+- `aligner(inputFileName)`
+  Returns two type of result: `stats`, `res`.
+  `stats` contains number of one2one, one2many, many2one, many2many, deletions, and additions.
+  `res` contains the result of `Alignment.getJSONFormat()`.
+
+- input
+  The input file should contain at least two attributes: `id`, and `diff`.
+  `id` should be unique, and the `diff` contains information of original & revision sentences.
+  The XML-like tag `<ins>` means revision text is made from insertion to the original text, `<del>` means deletion from original text makes revision text.
+
+  For example:
+
+  > Origin: Hello! My name is Foo.
+  > Revision: Hello! I'm Foo.
+  > Diff: Hello! <del>My name is</del><ins>I'm</ins> Foo.
